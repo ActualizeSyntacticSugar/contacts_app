@@ -1,0 +1,5 @@
+result = []
+result << { id: @contacts[0].id, first_name: @contacts[0].first_name, last_name: @contacts[0].last_name }
+result << { id: @contacts[1].id, first_name: @contacts[1].first_name, last_name: @contacts[1].last_name }
+result << { id: @contacts[2].id, first_name: @contacts[2].first_name, last_name: @contacts[2].last_name }
+return result
