@@ -1,5 +1,8 @@
-result = []
-@contacts.each do |contact|
-  result << { id: contact.id, first_name: contact.first_name, last_name: contact.last_name }
+@contacts.map do |contact|
+  {
+    id: contact.id,
+    first_name: contact.first_name,
+    last_name: contact.last_name,
+    email: contact.email,
+  }
 end
-return result
