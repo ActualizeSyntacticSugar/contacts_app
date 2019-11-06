@@ -1,7 +1,5 @@
 result = []
-index = 0
-while index < @contacts.length
-  result << { id: @contacts[index].id, first_name: @contacts[index].first_name, last_name: @contacts[index].last_name }
-  index = index + 1
+@contacts.each do |contact|
+  result << { id: contact.id, first_name: contact.first_name, last_name: contact.last_name }
 end
 return result
