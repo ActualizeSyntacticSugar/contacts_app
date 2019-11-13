@@ -4,7 +4,7 @@ class Contact < ApplicationRecord
   end
 
   def full_name
-    last_name + ", " + first_name + ", Esquire"
+    "#{last_name}, #{first_name} #{middle_name}"
   end
 
   def japan_phone_number
